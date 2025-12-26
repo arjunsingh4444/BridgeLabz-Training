@@ -1,0 +1,19 @@
+using System;
+
+class ArgumentOutOfRangeExceptionExample
+{
+    static void Main()
+    {
+        string text = "CSharp"; //take text 
+
+        try
+        {
+            // Invalid substring range
+            Console.WriteLine(text.Substring(5, -2)); //start ind is greater than end inx
+        }
+        catch (ArgumentOutOfRangeException e)
+        {
+            Console.WriteLine("ArgumentOutOfRangeException find ");
+        }
+    }
+}
