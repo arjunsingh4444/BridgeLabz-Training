@@ -238,3 +238,57 @@ Committed and pushed all updates using Git & GitHub.
 Maintained structured daily learning logs for consistent practice.
 
 
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+🗓️ 29th December 2025
+✅ Work Done
+
+Arrays – Temperature Analyzer
+
+Analyzed weekly hourly temperatures (float[7][24])
+
+Found hottest/coldest day and daily averages
+
+Student Test Scores Management
+
+Stored n student scores
+
+Calculated average, highest, lowest scores
+
+Displayed scores above average and handled invalid input
+
+Strings – Sentence Formatter
+
+Auto-corrected paragraphs:
+
+Capitalized first letter of sentences
+
+Fixed spacing after punctuation
+
+Trimmed extra spaces
+
+Paragraph Analyzer
+
+Counted words
+
+Found longest word
+
+Replaced a specific word (case-insensitive)
+
+LeetCode Practice
+
+longest prefix
+
+🛠 Tools & Workflow
+
+Programs organized in structured folders
+
+Committed and pushed using Git & GitHub
+
+
