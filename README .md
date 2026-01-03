@@ -419,4 +419,71 @@ Platform: .NET Console
 Concepts: OOPS, Static, this, is Operator, Arrays, Methods
 Tools: VS Code, Git, GitHub
 
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+📅 Date: 2 January 2026
+✅ Today’s Work Summary
+
+Practiced scenario-based programs, OOPS design principles, and solved a LeetCode problem. All work was pushed to the correct branches.
+
+🚌 Scenario-Based Programs
+
+Bus Route Distance Tracker: Tracked distance per stop, asked if passenger wants to get off, used while-loop for total distance, exited on confirmation.
+
+Festival Lucky Draw: Simulated Diwali mela lucky draw, visitors win gifts if number divisible by 3 and 5, used loops, modulus, and input validation.
+
+📌 Branch: oops-csharp-practice
+
+🧠 OOPS Design Principles
+
+Practiced Class Diagrams, Object Diagrams, and Sequence Diagrams.
+
+📌 Branch: oops-csharp-practice
+
+📌 Branch: core-csharp-practice
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+**Date:** 03 January 2026
+
+This README documents the **11 OOPS inheritance problems** I practiced and pushed today. The focus was on understanding different types of inheritance in **   C#    **
+
+## ✅ Assisted Problems (Basic Inheritance)
+### 1. Animal Hierarchy
+### 2. Employee Management System
+### 3. Vehicle and Transport System
+## ✅ Single Inheritance Problems
+### 4. Library Management (Book & Author)
+### 5. Smart Home Devices
+## ✅ Multilevel Inheritance Problems
+### 6. Online Retail Order Management
+### 7. Educational Course Hierarchy
+## ✅ Hierarchical Inheritance Problems
+### 8. Bank Account Types
+### 9. School System Roles
+## ✅ Hybrid Inheritance (Using Interfaces)
+### 10. Restaurant Management System
+### 11. Vehicle Management System
+* Branch:'oops-csharp-practice'
+
+## ✅ Additional LeetCode Practice
+### 12. Find the Duplicate Number (LeetCode)
+* Problem: Find the duplicate element in an integer array
+* Concept: Array frequency counting
+* Branch: `core-csharp-practice`
+  
+## 📌 Key Learnings
+* Practical use of **inheritance types** in C#
+* Method overriding and polymorphism
+* Handling user input safely
+* Writing clean, readable, human-style comments
+* Solving basic **array-based LeetCode problems** in C
+
 
