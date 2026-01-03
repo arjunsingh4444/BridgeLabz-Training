@@ -333,6 +333,7 @@ Tools: VS Code, Git, GitHub
 /////////////////////////////////////////////////////////////////////////////////////////
 
 
+
 📅 Date: 31 December 2025
 
 ✅ Today’s Work Overview
@@ -374,11 +375,7 @@ Tools: VS Code, Git, GitHub
 
 
 
-
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -428,7 +425,7 @@ Tools: VS Code, Git, GitHub
 
 Practiced scenario-based programs, OOPS design principles, and solved a LeetCode problem. All work was pushed to the correct branches.
 
-🚌 Scenario-Based Programs
+ Scenario-Based Programs
 
 Bus Route Distance Tracker: Tracked distance per stop, asked if passenger wants to get off, used while-loop for total distance, exited on confirmation.
 
@@ -456,25 +453,25 @@ Practiced Class Diagrams, Object Diagrams, and Sequence Diagrams.
 This README documents the **11 OOPS inheritance problems** I practiced and pushed today. The focus was on understanding different types of inheritance in **   C#    **
 
 ## ✅ Assisted Problems (Basic Inheritance)
-### 1. Animal Hierarchy
-### 2. Employee Management System
-### 3. Vehicle and Transport System
-## ✅ Single Inheritance Problems
-### 4. Library Management (Book & Author)
-### 5. Smart Home Devices
-## ✅ Multilevel Inheritance Problems
-### 6. Online Retail Order Management
-### 7. Educational Course Hierarchy
-## ✅ Hierarchical Inheritance Problems
-### 8. Bank Account Types
-### 9. School System Roles
-## ✅ Hybrid Inheritance (Using Interfaces)
-### 10. Restaurant Management System
-### 11. Vehicle Management System
+1. Animal Hierarchy
+2. Employee Management System
+3. Vehicle and Transport System
+## Single Inheritance Problems
+4. Library Management (Book & Author)
+5. Smart Home Devices
+## Multilevel Inheritance Problems
+6. Online Retail Order Management
+7. Educational Course Hierarchy
+## Hierarchical Inheritance Problems
+8. Bank Account Type
+9. School System Roles
+## Hybrid Inheritance (Using Interfaces)
+10. Restaurant Management System
+11. Vehicle Management System
 * Branch:'oops-csharp-practice'
 
 ## ✅ Additional LeetCode Practice
-### 12. Find the Duplicate Number (LeetCode)
+12. Find Duplicate Number 
 * Problem: Find the duplicate element in an integer array
 * Concept: Array frequency counting
 * Branch: `core-csharp-practice`
