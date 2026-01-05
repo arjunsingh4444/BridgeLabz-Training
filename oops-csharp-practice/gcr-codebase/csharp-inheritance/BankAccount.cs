@@ -55,7 +55,6 @@ class Program
     {
         SavingsAccount sa = new SavingsAccount
         {
-
             AccountNumber = "SA101",
             Balance = 50000,
             InterestRate = 4.5
