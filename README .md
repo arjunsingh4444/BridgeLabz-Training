@@ -525,7 +525,7 @@ The following OOP concepts are strongly implemented across all problems: *Encaps
 # Question Done
 The following systems were designed and implemented: 1.Employee Management System 2.E-Commerce Platform 3.Vehicle Rental System 4.Banking System 5.Library Management System 6.Online Food Delivery System 7.Hospital Patient Management System 8.Ride-Hailing Application 📌Branch:oops-csharp-practice
 
-# Scenaio Quesytion Done are 
+# Scenario Quesytion Done
 
 Bird Sanctuary system  And 
 Telecom company tracking call logs.
