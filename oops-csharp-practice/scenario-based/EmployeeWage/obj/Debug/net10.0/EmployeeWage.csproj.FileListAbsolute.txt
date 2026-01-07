@@ -1,0 +1,15 @@
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/bin/Debug/net10.0/EmployeeWage
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/bin/Debug/net10.0/EmployeeWage.deps.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/bin/Debug/net10.0/EmployeeWage.runtimeconfig.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/bin/Debug/net10.0/EmployeeWage.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/bin/Debug/net10.0/EmployeeWage.pdb
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/obj/Debug/net10.0/EmployeeWage.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/obj/Debug/net10.0/EmployeeWage.AssemblyInfoInputs.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/obj/Debug/net10.0/EmployeeWage.AssemblyInfo.cs
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/obj/Debug/net10.0/EmployeeWage.csproj.CoreCompileInputs.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/obj/Debug/net10.0/EmployeeWage.sourcelink.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/obj/Debug/net10.0/EmployeeWage.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/obj/Debug/net10.0/refint/EmployeeWage.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/obj/Debug/net10.0/EmployeeWage.pdb
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/obj/Debug/net10.0/EmployeeWage.genruntimeconfig.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/EmployeeWage/obj/Debug/net10.0/ref/EmployeeWage.dll
