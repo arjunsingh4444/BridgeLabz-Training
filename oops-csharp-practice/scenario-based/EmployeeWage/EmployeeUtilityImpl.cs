@@ -2,15 +2,15 @@ namespace EmployeeWage;
 public class EmployeeUtilityImpl:IEmployee
 {
 
-    private const int WagePerHour = 20;
+    private const int WagePerHour = 100;
     private const int FullDayHours = 8;
-    private const int PartTimeHours = 4;
-    private const int MaxWorkingDays = 20;
-    private const int MaxWorkingHours = 100;
+    private const int PartTimeHours = 2;
+    private const int MaxWorkingDays = 25;
+    private const int MaxWorkingHours = 150;
 
-    private Employee employee;
-    private Random random = new Random();
-    public EmployeeUtilityImpl(Employee employee)
+    private Employee employee; //reference to the Employee object
+    private Random random = new Random(); //to generate random numbers
+    public EmployeeUtilityImpl(Employee employee) //constructor to initialize the reference to the Employee object
     {
         this.employee = employee;
     }
@@ -18,14 +18,14 @@ public class EmployeeUtilityImpl:IEmployee
      public void CheckAttendance()
 {
     
-    int attendance = random.Next(0, 2);
-    Console.WriteLine(attendance == 1? "Employee is Present": "Employee is Absent");
+    int attendance = random.Next(0, 2); //generate random number between 0 and 1
+    Console.WriteLine(attendance == 1? "Employee is Present": "Employee is Absent"); //
 }
 
 //uc 2:calculate daily employee wage
  public void CalculateDailyWage()
     {
-        int dailyWage = WagePerHour * FullDayHours;
+        int dailyWage = WagePerHour * FullDayHours; //calculate wage for full day
         Console.WriteLine($"Daily Wage : {dailyWage}");
     }
 
@@ -37,10 +37,10 @@ public void AddPartTimeEmployee()
         Console.WriteLine($"Part Time Wage : {partTimeWage}");
     }
 
-    //uc 4:calculate using switch case
-     public void CalculateUsingSwitch()
+    //uc 4:calculate wage  using switch case
+     public void CalculateUsingSwitch() 
     {
-        int workType = random.Next(0, 3);
+        int workType = random.Next(0, 3); //generate random number between 0 and 2
         int hoursWorked = 0;
 
         switch (workType)
@@ -72,8 +72,8 @@ public void AddPartTimeEmployee()
     //Calculate Wages till a condition of total working hours or days is reached for a month 
      public void CalculateWageWithCondition()
     {
-        employee.TotalWorkingDays = 0;
-        employee.TotalWorkingHours = 0;
+        employee.TotalWorkingDays = 0; 
+        employee.TotalWorkingHours = 0; 
         employee.TotalWage = 0;
 
         while (employee.TotalWorkingDays < MaxWorkingDays &&
@@ -81,7 +81,7 @@ public void AddPartTimeEmployee()
         {
             employee.TotalWorkingDays++;
 
-            int workType = random.Next(0, 3);
+            int workType = random.Next(0, 3); //generate random number between 0 and 2
             int hoursWorked = 0;
 
             switch (workType)
@@ -97,8 +97,8 @@ public void AddPartTimeEmployee()
             employee.TotalWorkingHours += hoursWorked;
             employee.TotalWage += hoursWorked * WagePerHour;
         }
-
-        Console.WriteLine("\n--- Employee Wage Summary ---");
+        //output the total working days, hours and wage for the employee 
+        Console.WriteLine("\n   Employee Wage Summary   "); 
         Console.WriteLine($"Total Working Days  : {employee.TotalWorkingDays}");
         Console.WriteLine($"Total Working Hours : {employee.TotalWorkingHours}");
         Console.WriteLine($"Total Wage          : {employee.TotalWage}");

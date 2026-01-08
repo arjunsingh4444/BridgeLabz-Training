@@ -1,0 +1,15 @@
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/bin/Debug/net10.0/SmartPhoneAutomationSystem
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/bin/Debug/net10.0/SmartPhoneAutomationSystem.deps.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/bin/Debug/net10.0/SmartPhoneAutomationSystem.runtimeconfig.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/bin/Debug/net10.0/SmartPhoneAutomationSystem.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/bin/Debug/net10.0/SmartPhoneAutomationSystem.pdb
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/obj/Debug/net10.0/SmartPhoneAutomationSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/obj/Debug/net10.0/SmartPhoneAutomationSystem.AssemblyInfoInputs.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/obj/Debug/net10.0/SmartPhoneAutomationSystem.AssemblyInfo.cs
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/obj/Debug/net10.0/SmartPhoneAutomationSystem.csproj.CoreCompileInputs.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/obj/Debug/net10.0/SmartPhoneAutomationSystem.sourcelink.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/obj/Debug/net10.0/SmartPhoneAutomationSystem.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/obj/Debug/net10.0/refint/SmartPhoneAutomationSystem.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/obj/Debug/net10.0/SmartPhoneAutomationSystem.pdb
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/obj/Debug/net10.0/SmartPhoneAutomationSystem.genruntimeconfig.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/SmartPhoneAutomationSystem/obj/Debug/net10.0/ref/SmartPhoneAutomationSystem.dll
