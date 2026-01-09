@@ -1,0 +1,15 @@
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/bin/Debug/net10.0/FitnessTracker
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/bin/Debug/net10.0/FitnessTracker.deps.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/bin/Debug/net10.0/FitnessTracker.runtimeconfig.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/bin/Debug/net10.0/FitnessTracker.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/bin/Debug/net10.0/FitnessTracker.pdb
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/obj/Debug/net10.0/FitnessTracker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/obj/Debug/net10.0/FitnessTracker.AssemblyInfoInputs.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/obj/Debug/net10.0/FitnessTracker.AssemblyInfo.cs
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/obj/Debug/net10.0/FitnessTracker.csproj.CoreCompileInputs.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/obj/Debug/net10.0/FitnessTracker.sourcelink.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/obj/Debug/net10.0/FitnessTracker.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/obj/Debug/net10.0/refint/FitnessTracker.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/obj/Debug/net10.0/FitnessTracker.pdb
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/obj/Debug/net10.0/FitnessTracker.genruntimeconfig.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/FitnessTracker/obj/Debug/net10.0/ref/FitnessTracker.dll
