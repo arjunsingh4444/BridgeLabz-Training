@@ -1,11 +1,11 @@
 ﻿using System;
 
 // Implements book-related operations using fixed-size array
-public class BookService : IBookService
+public class BookService : IBookService //abstraction of IBookService
 {
-    private string[] books = new string[50]; // Max 50 books
+    private string[] books = new string[50];  //encapsulation of Max 50 books
     private int count = 0; // Current number of books
-
+ 
     // Add a book
     public void AddBook(string title, string author)
     {
@@ -15,13 +15,9 @@ public class BookService : IBookService
             return;
         }
 
-        if (string.IsNullOrWhiteSpace(title) || string.IsNullOrWhiteSpace(author))
-        {
-            Console.WriteLine("Title and Author cannot be empty.");
-            return;
-        }
+    
 
-        books[count] = $"{title} - {author}";
+        books[count] = $"{title} - {author}"; // Format book title with author
         count++;
         Console.WriteLine("Book added successfully.");
     }
@@ -39,10 +35,10 @@ public class BookService : IBookService
         {
             for (int j = 0; j < count - i - 1; j++)
             {
-                if (string.Compare(books[j], books[j + 1], StringComparison.OrdinalIgnoreCase) > 0)
+                if (string.Compare(books[j], books[j + 1], StringComparison.OrdinalIgnoreCase) > 0) // Compare book titles in case-insensitive 
                 {
-                    string temp = books[j];
-                    books[j] = books[j + 1];
+                    string temp = books[j]; // Swap books
+                    books[j] = books[j + 1]; 
                     books[j + 1] = temp;
                 }
             }
@@ -52,7 +48,7 @@ public class BookService : IBookService
     }
 
     // Search books by author
-    public void SearchByAuthor(string author)
+    public void SearchByAuthor(string author) 
     {
         if (count == 0)
         {
@@ -62,21 +58,21 @@ public class BookService : IBookService
 
         bool found = false;
 
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < count; i++) // Loop through all books
         {
-            string[] parts = books[i].Split('-');
+            string[] parts = books[i].Split('-'); // Split book title and author
             if (parts.Length == 2)
             {
-                string bookAuthor = parts[1].Trim();
-                if (bookAuthor.Equals(author, StringComparison.OrdinalIgnoreCase))
+                string bookAuthor = parts[1].Trim(); // Trim whitespace from author name
+                if (bookAuthor.Equals(author, StringComparison.OrdinalIgnoreCase)) // Compare author names in case-insensitive
                 {
-                    Console.WriteLine(books[i]);
-                    found = true;
+                    Console.WriteLine(books[i]); // Print book title
+                    found = true; // Set found flag to true
                 }
             }
         }
 
-        if (!found)
+        if (!found) // If no books found for this author
             Console.WriteLine("No books found for this author.");
     }
 
@@ -89,13 +85,13 @@ public class BookService : IBookService
             return;
         }
 
-        string[] exportArray = new string[count];
-        Array.Copy(books, exportArray, count);
+        string[] exportArray = new string[count]; // Create new array to hold books
+        Array.Copy(books, exportArray, count); // Copy books to export array
 
-        Console.WriteLine("\nExported Book List:");
-        for (int i = 0; i < exportArray.Length; i++)
+        Console.WriteLine("\nExported Book List:"); // Print header
+        for (int i = 0; i < exportArray.Length; i++) // Loop through export array and print each book
         {
-            Console.WriteLine(exportArray[i]);
-        }
+            Console.WriteLine(exportArray[i]); // Print book title
+        } 
     }
 }

@@ -10,7 +10,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.cinema_time
         private int count = 0; // current number of movies
 
         // Add a movie
-        public void AddMovie(string title, string time)
+        public void AddMovie(string title, string time) 
         {
             if (count >= movieTitles.Length) // check if array is full
             {
@@ -18,26 +18,20 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.cinema_time
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(title) || string.IsNullOrWhiteSpace(time)) // 
-            {
-                Console.WriteLine("Title and time cannot be empty.");
-                return;
-            }
-
-            movieTitles[count] = title;
-            movieTimes[count] = time;
+            movieTitles[count] = title; // add movie title to array
+            movieTimes[count] = time; // add movie time to array
             count++;
         }
 
         // Search movies by keyword
         public void SearchMovie(string keyword)
         {
-            bool found = false;
-            for (int i = 0; i < count; i++)
+            bool found = false; 
+            for (int i = 0; i < count; i++) // loop through all movies
             {
-                if (movieTitles[i].ToLower().Contains(keyword.ToLower()))
+                if (movieTitles[i].ToLower().Contains(keyword.ToLower())) // check if movie title contains keyword
                 {
-                    Console.WriteLine($"{movieTitles[i]} at {movieTimes[i]}");
+                    Console.WriteLine($"{movieTitles[i]} at {movieTimes[i]}"); // print movie details
                     found = true;
                 }
             }
@@ -70,15 +64,15 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.cinema_time
                 return;
             }
 
-            string[] titlesArray = new string[count];
-            string[] timesArray = new string[count];
-            Array.Copy(movieTitles, titlesArray, count);
-            Array.Copy(movieTimes, timesArray, count);
+            string[] titlesArray = new string[count]; // create new arrays to store movie titles and times
+            string[] timesArray = new string[count]; //
+            Array.Copy(movieTitles, titlesArray, count); // copy movie titles to new array
+            Array.Copy(movieTimes, timesArray, count); // copy movie times to new array
 
             Console.WriteLine("\nMovie Report:");
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < count; i++) // loop through all movies and print report
             {
-                Console.WriteLine($"{titlesArray[i]} - {timesArray[i]}");
+                Console.WriteLine($"{titlesArray[i]} - {timesArray[i]}"); // print movie details
             }
         }
     }

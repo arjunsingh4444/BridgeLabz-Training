@@ -1,7 +1,9 @@
 ﻿using System;
 
 // Handles user input and menu
-public class MenuHandler
+public class Menu
+
+
 {
     public static void ShowMenu(IBookService service)
     {

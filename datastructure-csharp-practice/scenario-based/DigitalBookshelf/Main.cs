@@ -6,6 +6,6 @@ class Program
     static void Main()
     {
         IBookService bookService = new BookService(); // Loose coupling
-        MenuHandler.ShowMenu(bookService);            // Start menu
+        Menu.ShowMenu(bookService);            // Start menu
     }
 }

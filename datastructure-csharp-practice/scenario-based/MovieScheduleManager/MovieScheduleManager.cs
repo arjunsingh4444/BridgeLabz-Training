@@ -8,7 +8,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.cinema_time
         {
             ICinemaService cinema = new CinemaService(); // create an instance of ICinemaService
 
-            while (true)
+            while (true) //menu loop to execute user choices
             {
                 Console.WriteLine("\n--- CinemaTime Menu ---");
                 Console.WriteLine("1. Add Movie");
