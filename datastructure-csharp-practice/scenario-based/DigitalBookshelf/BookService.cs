@@ -46,6 +46,19 @@ public class BookService : IBookService //abstraction of IBookService
 
         Console.WriteLine("Books sorted alphabetically.");
     }
+    public void DisplayBooks()
+    {
+        if (count == 0)
+        {
+            Console.WriteLine("No books available to display.");
+            return;
+        }
+
+        for (int i = 0; i < count; i++)
+        {
+            Console.WriteLine(books[i]);
+        }
+    }
 
     // Search books by author
     public void SearchByAuthor(string author) 
@@ -75,23 +88,5 @@ public class BookService : IBookService //abstraction of IBookService
         if (!found) // If no books found for this author
             Console.WriteLine("No books found for this author.");
     }
-
-    // Export books as array
-    public void ExportBooks()
-    {
-        if (count == 0)
-        {
-            Console.WriteLine("No books to export.");
-            return;
-        }
-
-        string[] exportArray = new string[count]; // Create new array to hold books
-        Array.Copy(books, exportArray, count); // Copy books to export array
-
-        Console.WriteLine("\nExported Book List:"); // Print header
-        for (int i = 0; i < exportArray.Length; i++) // Loop through export array and print each book
-        {
-            Console.WriteLine(exportArray[i]); // Print book title
-        } 
-    }
+    
 }

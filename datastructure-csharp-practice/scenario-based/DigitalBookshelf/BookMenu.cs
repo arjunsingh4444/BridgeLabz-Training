@@ -15,7 +15,7 @@ public class Menu
             Console.WriteLine("1. Add Book");
             Console.WriteLine("2. Sort Books Alphabetically");
             Console.WriteLine("3. Search By Author");
-            Console.WriteLine("4. Export Books");
+            Console.WriteLine("4. Display book");
             Console.WriteLine("5. Exit");
             Console.Write("Enter choice: ");
 
@@ -42,11 +42,11 @@ public class Menu
                     string searchAuthor = Console.ReadLine();
                     service.SearchByAuthor(searchAuthor);
                     break;
-
                 case 4:
-                    service.ExportBooks();
+                    Console.Write("Enter book title to display: ");
+                    string displayTitle = Console.ReadLine();
+                    service.DisplayBook(displayTitle);
                     break;
-
                 case 5:
                     Console.WriteLine("Exiting BookBuddy...");
                     break;
