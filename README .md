@@ -561,6 +561,11 @@ Problems Covered Today (9 Linked List Questions + 1 LeetCode)
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 📝Date  8-January-2026 Work Done Today
 
 Today, I focused on C# Data Structures and OOP Concepts, solving multiple problems related to Stacks, Queues, Hashing, and Scenario-based questions.
@@ -576,3 +581,88 @@ Two Sum problem solved using HashMap (optimized single-pass solution). *Pushed i
 ## Scenario-Based Question: Smart Home Automation System
 
 Concepts: Appliance, Light, Fan, AC Interface: IControllable (methods: TurnOn(), TurnOff()) Polymorphism: Each appliance behaves differently when turned on/off, e.g., Light vs AC. *pushed in branch: oops-csharp-practice.
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+### 📅Date=9 January 2026
+This repository contains implementations of various sorting algorithms and data structure problems in C#, along with LeetCode and scenario-based design problems.
+
+### 🔹 Sorting Algorithms Implemented
+1. Bubble Sort – Sort Student Marks
+2. Insertion Sort – Sort Employee IDs
+3. Merge Sort – Sort Book Prices
+4. Quick Sort – Sort Product Prices
+5. Selection Sort – Sort Exam Scores
+6. Heap Sort – Sort Job Applicants by Salary
+7. Counting Sort – Sort Student Ages
+
+### 🔹 LeetCode Problem Solved
+LeetCode 442 – Find All Duplicates in an Array
+Approach:
+HashMap based solution
+
+### 🔹 Scenario-Based Problems
+1.🏧 ATM Dispenser Logic
+Context: Design logic for an ATM that dispenses the minimum number of notes for a given withdrawal amount.
+Concepts Used:Greedy approach,Conditional logic,Real-world problem modeling
+2.🏋️ FitTrack – Fitness Tracker System
+Scenario:Design a fitness tracking system using OOP principles.
+Classes: UserProfile, Workout
+Interface: ITrackable
+Types: CardioWorkout, StrengthWorkout
+Concepts Used: Abstraction, Inheritance, Polymorphism
+
+### 🌿 Branch Details
+1.datastructure-csharp-practice
+*Sorting Algorithms
+*LeetCode 442-Find All Duplicates in an Array
+*ATM Dispenser Logic(Scenario-Based)
+2.oops-csharp-practice
+*FitTrack – Fitness Tracker (Scenario-Based OOP Design)
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+### 📅 Date  12 January 2026
+
+#### 🔹 Scenario-Based Problems
+##### 1. Metal Factory Pipe Cutting – Maximize revenue from rod cuts.
+
+Scenario A: Optimal cuts for length 8.
+
+Scenario B: Add custom-length order.
+
+Scenario C: Visualize revenue for unoptimized cuts.
+
+##### 2. Custom Furniture Manufacturing – Cut wooden rods to maximize earnings.
+
+Scenario A: Best cut for 12ft rod.
+
+Scenario B: Adjust for waste constraint.
+
+Scenario C: Maximize revenue, minimize waste.
+
+##### 3. LoanBuddy – Loan Approval Automation – Automate personal loan approvals.
+
+Applicant & LoanApplication classes, IApprovable interface.
+
+EMI calculation, constructors for different loan types.
+
+Encapsulation, inheritance, polymorphism, access modifiers.
+
+#### 🔹 LeetCode Problem Solved
+
+Binary Search – Find target in a sorted array.
+
+#### 🔹 Assignments
+
+Submission of Linear Search and Binary Search.
