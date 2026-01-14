@@ -1,8 +1,10 @@
 using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace AddressBookApp.Models
+namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
 {
-    public class Contact
+    internal class Contact
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -15,8 +17,7 @@ namespace AddressBookApp.Models
 
         public override string? ToString()
         {
-            return $" FirstName  : {FirstName}, LastName : {LastName},  Address : {Address},   City :  {City}, State :  {State},  Zip : {Zip},  PhoneNumber :{PhoneNumber},  MailId :{Email}";
+            return $"Name: {FirstName} {LastName}\nAddress: {Address}, {City}, {State} - {Zip}\nPhone: {PhoneNumber}\nEmail: {Email}";
         }
     }
-
 }
