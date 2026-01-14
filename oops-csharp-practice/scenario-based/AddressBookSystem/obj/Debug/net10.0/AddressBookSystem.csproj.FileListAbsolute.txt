@@ -1,0 +1,15 @@
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/bin/Debug/net10.0/AddressBookSystem
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/bin/Debug/net10.0/AddressBookSystem.deps.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/bin/Debug/net10.0/AddressBookSystem.runtimeconfig.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/bin/Debug/net10.0/AddressBookSystem.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/bin/Debug/net10.0/AddressBookSystem.pdb
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/obj/Debug/net10.0/AddressBookSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/obj/Debug/net10.0/AddressBookSystem.AssemblyInfoInputs.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/obj/Debug/net10.0/AddressBookSystem.AssemblyInfo.cs
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/obj/Debug/net10.0/AddressBookSystem.csproj.CoreCompileInputs.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/obj/Debug/net10.0/AddressBookSystem.sourcelink.json
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/obj/Debug/net10.0/AddressBookSystem.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/obj/Debug/net10.0/refint/AddressBookSystem.dll
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/obj/Debug/net10.0/AddressBookSystem.pdb
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/obj/Debug/net10.0/AddressBookSystem.genruntimeconfig.cache
+/Users/arjunsingh/Documents/BridgeLabz-Training/oops-csharp-practice/scenario-based/AddressBookSystem/obj/Debug/net10.0/ref/AddressBookSystem.dll
