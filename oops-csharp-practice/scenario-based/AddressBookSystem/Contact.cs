@@ -14,10 +14,5 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
         public string Zip { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-
-        public override string? ToString()
-        {
-            return $"Name: {FirstName} {LastName}\nAddress: {Address}, {City}, {State} - {Zip}\nPhone: {PhoneNumber}\nEmail: {Email}";
-        }
     }
 }
