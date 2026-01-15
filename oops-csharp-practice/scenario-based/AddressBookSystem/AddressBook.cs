@@ -1,36 +1,45 @@
-
 using System;
 
 namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
 {
-    internal class AddressBook : IAddressBook
+    internal class AddressBook : IAddressBook //Implementing IAddressBook interface
     {
-        private Contact[] contacts = new Contact[50];
-        private int count = 0;
+        private Contact[] contacts = new Contact[50]; //Array to store contacts
+        private int count = 0; //Counter for contacts
 
-        public string Name; // Name of this Address Book
+        public string Name;
 
-        public AddressBook(string name)
+        public AddressBook(string name) //Constructor
         {
             Name = name;
         }
 
-        // Add a single contact
+        // UC-7: Add contact with duplicate check
         public void AddContact()
         {
-            if (count >= contacts.Length)
+            if (count >= contacts.Length) //Check if array is full
             {
-                Console.WriteLine("Address Book is Full\n");
+                Console.WriteLine("Address Book is Full\n"); 
                 return;
             }
 
-            Contact contact = new Contact();
+            Contact contact = new Contact(); //Creating new contact
 
             Console.Write("Enter First Name: ");
             contact.FirstName = Console.ReadLine();
 
             Console.Write("Enter Last Name: ");
             contact.LastName = Console.ReadLine();
+
+            // Duplicate check
+            for (int i = 0; i < count; i++) //Iterate through existing contacts
+            {
+                if (contacts[i].Equals(contact))
+                {
+                    Console.WriteLine("Duplicate Contact Found. Cannot Add Same Person Again\n"); 
+                    return;
+                }
+            }
 
             Console.Write("Enter Address: ");
             contact.Address = Console.ReadLine();
@@ -56,8 +65,7 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
             Console.WriteLine("Contact Added Successfully\n");
         }
 
-        // Add multiple contacts menu
-        public void AddMultipleContactsMenu()
+        public void AddMultipleContactsMenu() //Menu to add multiple contacts
         {
             int choice;
             do
@@ -67,7 +75,7 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
                 Console.WriteLine("0. Go Back");
                 Console.Write("Enter Choice: ");
 
-                choice = Convert.ToInt32(Console.ReadLine());
+                choice = Convert.ToInt32(Console.ReadLine()); 
 
                 switch (choice)
                 {
@@ -80,19 +88,17 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
                         Console.WriteLine("Invalid Choice");
                         break;
                 }
-
             } while (choice != 0);
         }
 
-        // Edit contact by first name
-        public void EditContact()
+        public void EditContact() //Edit contact
         {
             Console.Write("Enter First Name to Edit: ");
             string name = Console.ReadLine();
 
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < count; i++) //Iterate through contacts
             {
-                if (contacts[i].FirstName == name)
+                if (contacts[i].FirstName == name) //If first name matches
                 {
                     Console.Write("Enter New Address: ");
                     contacts[i].Address = Console.ReadLine();
@@ -120,23 +126,22 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
             Console.WriteLine("Contact Not Found\n");
         }
 
-        // Delete contact by first name
-        public void DeleteContact()
+        public void DeleteContact() //Delete contact
         {
             Console.Write("Enter First Name to Delete: ");
             string name = Console.ReadLine();
 
             for (int i = 0; i < count; i++)
             {
-                if (contacts[i].FirstName == name)
+                if (contacts[i].FirstName == name) //If first name matches
                 {
-                    for (int j = i; j < count - 1; j++)
-                        contacts[j] = contacts[j + 1];
+                    for (int j = i; j < count - 1; j++) //Shift contacts to delete the contact
+                        contacts[j] = contacts[j + 1]; //Shift contacts
+ 
+                    contacts[count - 1] = null; //Remove last duplicate contact
+                    count--; //Decrement count
 
-                    contacts[count - 1] = null;
-                    count--;
-
-                    Console.WriteLine("Contact Deleted Successfully\n");
+                    Console.WriteLine("Contact Deleted Successfully\n"); //Confirmation message
                     return;
                 }
             }
