@@ -4,11 +4,11 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
 {
     internal class MenuManager
     {
-        private static AddressBook[] addressBooks = new AddressBook[10]; // Maximum 10 Address Books
-        private static string[] addressBookNames = new string[10]; // Names of Address Books
-        private static int bookCount = 0; // Counter for Address Books
+        private static AddressBook[] addressBooks = new AddressBook[10];
+        private static string[] addressBookNames = new string[10];
+        private static int bookCount = 0;
 
-        public static void DisplayMenu() //Display main menu
+        public static void DisplayMenu()
         {
             int choice;
 
@@ -17,8 +17,8 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
                 Console.WriteLine("\n--- Multiple Address Book Menu ---");
                 Console.WriteLine("1. Create New Address Book");
                 Console.WriteLine("2. Select Address Book");
+                Console.WriteLine("3. Search Person (City/State)");
                 Console.WriteLine("0. Exit");
-                Console.Write("Enter Choice: ");
 
                 choice = Convert.ToInt32(Console.ReadLine());
 
@@ -30,68 +30,32 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
                     case 2:
                         SelectAddressBook();
                         break;
-                    case 0:
-                        Console.WriteLine("Program Ended");
-                        break;
-                    default:
-                        Console.WriteLine("Invalid Choice");
+                    case 3:
+                        SearchAcrossAddressBooks();
                         break;
                 }
 
             } while (choice != 0);
         }
 
-        private static void CreateNewAddressBook() //Create new address book
+        private static void CreateNewAddressBook()
         {
-            if (bookCount >= addressBooks.Length) //Check if maximum address books reached
-            {
-                Console.WriteLine("Maximum Address Books reached!\n");
-                return;
-            }
-
             Console.Write("Enter Name for New Address Book: ");
-            string name = Console.ReadLine();
-
-            for (int i = 0; i < bookCount; i++) //Check for duplicate names
-            {
-                if (addressBookNames[i] == name) //If name already exists
-                {
-                    Console.WriteLine("Address Book with this name already exists!\n");
-                    return;
-                }
-            }
-
-            addressBooks[bookCount] = new AddressBook(name); //Create new address book
-            addressBookNames[bookCount] = name;
+            addressBookNames[bookCount] = Console.ReadLine();
+            addressBooks[bookCount] = new AddressBook(addressBookNames[bookCount]);
             bookCount++;
-
-            Console.WriteLine($"Address Book '{name}' Created Successfully\n");
         }
 
-        private static void SelectAddressBook() //Select existing address book
+        private static void SelectAddressBook()
         {
-            if (bookCount == 0)
-            {
-                Console.WriteLine("No Address Books available\n"); //No address books to select
-                return;
-            }
-
             for (int i = 0; i < bookCount; i++)
-                Console.WriteLine($"{i + 1}. {addressBookNames[i]}"); //        List available address books
+                Console.WriteLine($"{i + 1}. {addressBookNames[i]}");
 
-            Console.Write("Select Address Book: ");
             int choice = Convert.ToInt32(Console.ReadLine());
-
-            if (choice < 1 || choice > bookCount)
-            {
-                Console.WriteLine("Invalid Choice\n");
-                return;
-            }
-
             AddressBookMenu(addressBooks[choice - 1]);
         }
 
-        private static void AddressBookMenu(AddressBook book) //Menu for selected address book
+        private static void AddressBookMenu(AddressBook book)
         {
             int choice;
             do
@@ -102,27 +66,34 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
                 Console.WriteLine("3. Edit Contact");
                 Console.WriteLine("4. Delete Contact");
                 Console.WriteLine("0. Go Back");
-                Console.Write("Enter Choice: ");
 
                 choice = Convert.ToInt32(Console.ReadLine());
 
-                switch (choice)
-                {
-                    case 1:
-                        book.AddContact();
-                        break;
-                    case 2:
-                        book.AddMultipleContactsMenu();
-                        break;
-                    case 3:
-                        book.EditContact();
-                        break;
-                    case 4:
-                        book.DeleteContact();
-                        break;
-                }
+                if (choice == 1) book.AddContact();
+                if (choice == 2) book.AddMultipleContactsMenu();
+                if (choice == 3) book.EditContact();
+                if (choice == 4) book.DeleteContact();
 
-            } while (choice != 0); //Go back to main menu
+            } while (choice != 0);
+        }
+
+        // UC-8
+        private static void SearchAcrossAddressBooks()
+        {
+            Console.WriteLine("1. Search by City");
+            Console.WriteLine("2. Search by State");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter value: ");
+            string value = Console.ReadLine();
+
+            for (int i = 0; i < bookCount; i++)
+            {
+                if (choice == 1)
+                    addressBooks[i].SearchByCity(value);
+                else
+                    addressBooks[i].SearchByState(value);
+            }
         }
     }
 }

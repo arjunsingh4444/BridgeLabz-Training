@@ -2,28 +2,28 @@ using System;
 
 namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
 {
-    internal class AddressBook : IAddressBook //Implementing IAddressBook interface
+    internal class AddressBook : IAddressBook
     {
-        private Contact[] contacts = new Contact[50]; //Array to store contacts
-        private int count = 0; //Counter for contacts
+        private Contact[] contacts = new Contact[50];
+        private int count = 0;
 
         public string Name;
 
-        public AddressBook(string name) //Constructor
+        public AddressBook(string name)
         {
             Name = name;
         }
 
-        // UC-7: Add contact with duplicate check
+        // UC-7
         public void AddContact()
         {
-            if (count >= contacts.Length) //Check if array is full
+            if (count >= contacts.Length)
             {
-                Console.WriteLine("Address Book is Full\n"); 
+                Console.WriteLine("Address Book is Full\n");
                 return;
             }
 
-            Contact contact = new Contact(); //Creating new contact
+            Contact contact = new Contact();
 
             Console.Write("Enter First Name: ");
             contact.FirstName = Console.ReadLine();
@@ -31,12 +31,11 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
             Console.Write("Enter Last Name: ");
             contact.LastName = Console.ReadLine();
 
-            // Duplicate check
-            for (int i = 0; i < count; i++) //Iterate through existing contacts
+            for (int i = 0; i < count; i++)
             {
                 if (contacts[i].Equals(contact))
                 {
-                    Console.WriteLine("Duplicate Contact Found. Cannot Add Same Person Again\n"); 
+                    Console.WriteLine("Duplicate Contact Found. Cannot Add Same Person Again\n");
                     return;
                 }
             }
@@ -59,13 +58,11 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
             Console.Write("Enter Email: ");
             contact.Email = Console.ReadLine();
 
-            contacts[count] = contact;
-            count++;
-
+            contacts[count++] = contact;
             Console.WriteLine("Contact Added Successfully\n");
         }
 
-        public void AddMultipleContactsMenu() //Menu to add multiple contacts
+        public void AddMultipleContactsMenu()
         {
             int choice;
             do
@@ -73,52 +70,27 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
                 Console.WriteLine($"\n--- Add Contacts to Address Book: {Name} ---");
                 Console.WriteLine("1. Add New Contact");
                 Console.WriteLine("0. Go Back");
-                Console.Write("Enter Choice: ");
 
-                choice = Convert.ToInt32(Console.ReadLine()); 
+                choice = Convert.ToInt32(Console.ReadLine());
 
-                switch (choice)
-                {
-                    case 1:
-                        AddContact();
-                        break;
-                    case 0:
-                        break;
-                    default:
-                        Console.WriteLine("Invalid Choice");
-                        break;
-                }
+                if (choice == 1)
+                    AddContact();
+
             } while (choice != 0);
         }
 
-        public void EditContact() //Edit contact
+        public void EditContact()
         {
             Console.Write("Enter First Name to Edit: ");
             string name = Console.ReadLine();
 
-            for (int i = 0; i < count; i++) //Iterate through contacts
+            for (int i = 0; i < count; i++)
             {
-                if (contacts[i].FirstName == name) //If first name matches
+                if (contacts[i].FirstName == name)
                 {
-                    Console.Write("Enter New Address: ");
-                    contacts[i].Address = Console.ReadLine();
-
                     Console.Write("Enter New City: ");
                     contacts[i].City = Console.ReadLine();
-
-                    Console.Write("Enter New State: ");
-                    contacts[i].State = Console.ReadLine();
-
-                    Console.Write("Enter New Zip: ");
-                    contacts[i].Zip = Console.ReadLine();
-
-                    Console.Write("Enter New Phone Number: ");
-                    contacts[i].PhoneNumber = Console.ReadLine();
-
-                    Console.Write("Enter New Email: ");
-                    contacts[i].Email = Console.ReadLine();
-
-                    Console.WriteLine("Contact Updated Successfully\n");
+                    Console.WriteLine("Contact Updated\n");
                     return;
                 }
             }
@@ -126,27 +98,44 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
             Console.WriteLine("Contact Not Found\n");
         }
 
-        public void DeleteContact() //Delete contact
+        public void DeleteContact()
         {
             Console.Write("Enter First Name to Delete: ");
             string name = Console.ReadLine();
 
             for (int i = 0; i < count; i++)
             {
-                if (contacts[i].FirstName == name) //If first name matches
+                if (contacts[i].FirstName == name)
                 {
-                    for (int j = i; j < count - 1; j++) //Shift contacts to delete the contact
-                        contacts[j] = contacts[j + 1]; //Shift contacts
- 
-                    contacts[count - 1] = null; //Remove last duplicate contact
-                    count--; //Decrement count
+                    for (int j = i; j < count - 1; j++)
+                        contacts[j] = contacts[j + 1];
 
-                    Console.WriteLine("Contact Deleted Successfully\n"); //Confirmation message
+                    contacts[--count] = null;
+                    Console.WriteLine("Contact Deleted\n");
                     return;
                 }
             }
 
             Console.WriteLine("Contact Not Found\n");
+        }
+
+        // UC-8
+        public void SearchByCity(string city)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i].City == city)
+                    Console.WriteLine($"{contacts[i].FirstName} {contacts[i].LastName} | {Name}");
+            }
+        }
+
+        public void SearchByState(string state)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i].State == state)
+                    Console.WriteLine($"{contacts[i].FirstName} {contacts[i].LastName} | {Name}");
+            }
         }
     }
 }

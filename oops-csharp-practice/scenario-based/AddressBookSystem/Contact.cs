@@ -19,7 +19,7 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
             return $"Name: {FirstName} {LastName}, Address: {Address}, City: {City}, State: {State}, Zip: {Zip}, Phone: {PhoneNumber}, Email: {Email}";
         } 
 
-        // UC-7: Override Equals to check duplicate person by name
+        // UC --->7: Override Equals to check duplicate person by name
         public override bool Equals(object obj) //Override equals method
         {
             if (obj == null || !(obj is Contact))
