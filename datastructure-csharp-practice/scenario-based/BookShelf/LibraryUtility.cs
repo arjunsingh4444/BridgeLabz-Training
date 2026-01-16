@@ -1,6 +1,5 @@
 ﻿using System;
 
-namespace BridgeLabzDup.datastructure_csharp_practice.scenario_based.book_shelf;
 
 // Implements library logic using custom dictionary and linked lists
 public class LibraryUtility : IBookShelfManager

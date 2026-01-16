@@ -1,6 +1,5 @@
 ﻿using System;
 
-namespace BridgeLabzDup.datastructure_csharp_practice.scenario_based.book_shelf;
 
 // Custom dictionary mapping Genre → BookLinkedList
 public class CustomDictionary

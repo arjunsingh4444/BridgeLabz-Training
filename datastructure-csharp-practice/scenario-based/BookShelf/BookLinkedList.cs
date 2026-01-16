@@ -1,8 +1,7 @@
 ﻿using System;
 
-namespace BridgeLabzDup.datastructure_csharp_practice.scenario_based.book_shelf;
 
-// Linked list to manage books of a particular genre
+// Linked list to manage books 
 public class BookLinkedList
 {
     private BookNode head;

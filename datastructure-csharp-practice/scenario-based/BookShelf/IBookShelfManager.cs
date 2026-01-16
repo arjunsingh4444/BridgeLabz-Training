@@ -1,5 +1,4 @@
-﻿namespace BridgeLabzDup.datastructure_csharp_practice.scenario_based.book_shelf;
-
+﻿
 // Defines operations for library management
 public interface IBookShelfManager
 {
