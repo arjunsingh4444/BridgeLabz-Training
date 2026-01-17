@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "datastructure-csharp-practice", "datastructure-csharp-practice", "{CFD794E8-D647-104F-091B-BF73529A0508}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scenario-based", "scenario-based", "{606D9446-7CC9-2BCC-0606-979B06418E77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashDealz", "datastructure-csharp-practice\scenario-based\FlashDealz\FlashDealz.csproj", "{873491F3-7491-846D-3588-127C1903E3F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBookshelf", "datastructure-csharp-practice\scenario-based\DigitalBookshelf\DigitalBookshelf.csproj", "{5F4ABDD9-49B3-C831-4141-AA1AC5EB06B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficManager", "datastructure-csharp-practice\scenario-based\TrafficManager\TrafficManager.csproj", "{FE31A39B-A30C-6A6A-B4FC-4FBE41DB6F6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShelf", "datastructure-csharp-practice\scenario-based\BookShelf\BookShelf.csproj", "{54539306-A195-58A0-6C30-1ABF2736D199}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{873491F3-7491-846D-3588-127C1903E3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873491F3-7491-846D-3588-127C1903E3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873491F3-7491-846D-3588-127C1903E3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873491F3-7491-846D-3588-127C1903E3F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4ABDD9-49B3-C831-4141-AA1AC5EB06B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4ABDD9-49B3-C831-4141-AA1AC5EB06B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4ABDD9-49B3-C831-4141-AA1AC5EB06B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4ABDD9-49B3-C831-4141-AA1AC5EB06B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE31A39B-A30C-6A6A-B4FC-4FBE41DB6F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE31A39B-A30C-6A6A-B4FC-4FBE41DB6F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE31A39B-A30C-6A6A-B4FC-4FBE41DB6F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE31A39B-A30C-6A6A-B4FC-4FBE41DB6F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54539306-A195-58A0-6C30-1ABF2736D199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54539306-A195-58A0-6C30-1ABF2736D199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54539306-A195-58A0-6C30-1ABF2736D199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54539306-A195-58A0-6C30-1ABF2736D199}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{606D9446-7CC9-2BCC-0606-979B06418E77} = {CFD794E8-D647-104F-091B-BF73529A0508}
+		{873491F3-7491-846D-3588-127C1903E3F7} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{5F4ABDD9-49B3-C831-4141-AA1AC5EB06B2} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{FE31A39B-A30C-6A6A-B4FC-4FBE41DB6F6E} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{54539306-A195-58A0-6C30-1ABF2736D199} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BED63FE4-1F8C-4E5B-A358-CEF63F672313}
+	EndGlobalSection
+EndGlobal
