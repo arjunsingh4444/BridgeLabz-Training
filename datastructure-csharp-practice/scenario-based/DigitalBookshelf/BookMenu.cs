@@ -1,61 +1,59 @@
-﻿using System;
+﻿// using System;
 
-// Handles user input and menu
-public class Menu
+// // Handles user input and menu
+// public class Menu
+// {
+//     public static void ShowMenu(IBookService service)
+//     {
+//         int choice;
 
+//         do
+//         {
+//             Console.WriteLine("\n BookBuddy – Digital Bookshelf");
+//             Console.WriteLine("1. Add Book");
+//             Console.WriteLine("2. Sort Books Alphabetically");
+//             Console.WriteLine("3. Search By Author");
+//             Console.WriteLine("4. Display book");
+//             Console.WriteLine("5. Exit");
+//             Console.Write("Enter choice: ");
 
-{
-    public static void ShowMenu(IBookService service)
-    {
-        int choice;
+//             choice = int.Parse(Console.ReadLine());
 
-        do
-        {
-            Console.WriteLine("\n BookBuddy – Digital Bookshelf");
-            Console.WriteLine("1. Add Book");
-            Console.WriteLine("2. Sort Books Alphabetically");
-            Console.WriteLine("3. Search By Author");
-            Console.WriteLine("4. Display book");
-            Console.WriteLine("5. Exit");
-            Console.Write("Enter choice: ");
+//             switch (choice)
+//             {
+//                 case 1:
+//                     Console.Write("Enter book title: ");
+//                     string title = Console.ReadLine();
 
-            choice = int.Parse(Console.ReadLine());
+//                     Console.Write("Enter author name: ");
+//                     string author = Console.ReadLine();
 
-            switch (choice)
-            {
-                case 1:
-                    Console.Write("Enter book title: ");
-                    string title = Console.ReadLine();
+//                     service.AddBook(title, author);
+//                     break;
 
-                    Console.Write("Enter author name: ");
-                    string author = Console.ReadLine();
+//                 case 2:
+//                     service.SortBooksAlphabetically();
+//                     break;
 
-                    service.AddBook(title, author);
-                    break;
+//                 case 3:
+//                     Console.Write("Enter author to search: ");
+//                     string searchAuthor = Console.ReadLine();
+//                     service.SearchByAuthor(searchAuthor);
+//                     break;
+//                 case 4:
+//                     Console.Write("Enter book title to display: ");
+//                     string displayTitle = Console.ReadLine();
+//                     service.DisplayBook(displayTitle);
+//                     break;
+//                 case 5:
+//                     Console.WriteLine("Exiting BookBuddy...");
+//                     break;
 
-                case 2:
-                    service.SortBooksAlphabetically();
-                    break;
+//                 default:
+//                     Console.WriteLine("Invalid choice.");
+//                     break;
+//             }
 
-                case 3:
-                    Console.Write("Enter author to search: ");
-                    string searchAuthor = Console.ReadLine();
-                    service.SearchByAuthor(searchAuthor);
-                    break;
-                case 4:
-                    Console.Write("Enter book title to display: ");
-                    string displayTitle = Console.ReadLine();
-                    service.DisplayBook(displayTitle);
-                    break;
-                case 5:
-                    Console.WriteLine("Exiting BookBuddy...");
-                    break;
-
-                default:
-                    Console.WriteLine("Invalid choice.");
-                    break;
-            }
-
-        } while (choice != 5);
-    }
-}
+//         } while (choice != 5);
+//     }
+// }
