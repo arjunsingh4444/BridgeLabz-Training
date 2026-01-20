@@ -823,3 +823,32 @@ Used Bubble Sort for small, frequently updated step data
 Enabled real-time ranking updates
 
 💻 LeetCode – Next Greater Element I
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+📅 Date: 19 January 2026
+
+📦 ParcelTracker – Delivery Chain Management (Singly Linked List)
+Implemented a singly linked list to track parcel delivery stages sequentially
+
+Enabled forward traversal, custom checkpoints, and handled missing parcels using null pointers
+
+📝 ExamProctor – Online Exam Review System (Stack + HashMap)
+Used a stack to record question navigation history during an exam
+
+Stored student answers using a HashMap and calculated scores through dedicated functions
+
+🧩 Assignment – C# Generics
+Applied generics to build type-safe, reusable components across multiple scenarios
+
+Improved code flexibility using constraints, interfaces, and generic methods
+
+💻 LeetCode – Binary Tree Inorder Traversal
+Solved inorder traversal using an iterative approach with a stack for efficient traversal
