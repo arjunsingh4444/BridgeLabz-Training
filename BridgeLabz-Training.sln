@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "collections-csharp-practice", "collections-csharp-practice", "{B74F3C35-59E8-51DC-66E2-E46BE919468F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gcr-codebase", "gcr-codebase", "{255FAFDC-F1EC-4880-7D21-15A4A1D77069}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp-regex-nunit ", "csharp-regex-nunit ", "{29C6F142-1C22-5824-47A2-5A522D062DC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "level-2-nunit", "level-2-nunit", "{DA71177D-7138-F2DF-6218-5092368423D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StringUtility", "StringUtility", "{CF84FF9D-5F61-6DE1-B27B-CD5AEFD2339F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringUtilityTesting", "collections-csharp-practice\gcr-codebase\csharp-regex-nunit \level-2-nunit\StringUtility\StringUtilityTesting\StringUtilityTesting.csproj", "{0B2197A7-A1FC-CECB-CB67-96C1AB6477BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringUtilityLibrary", "collections-csharp-practice\gcr-codebase\csharp-regex-nunit \level-2-nunit\StringUtility\StringUtilityLibrary\StringUtilityLibrary.csproj", "{9094F4A4-BED0-3648-6A87-32BFD9F852B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B2197A7-A1FC-CECB-CB67-96C1AB6477BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2197A7-A1FC-CECB-CB67-96C1AB6477BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2197A7-A1FC-CECB-CB67-96C1AB6477BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2197A7-A1FC-CECB-CB67-96C1AB6477BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9094F4A4-BED0-3648-6A87-32BFD9F852B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9094F4A4-BED0-3648-6A87-32BFD9F852B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9094F4A4-BED0-3648-6A87-32BFD9F852B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9094F4A4-BED0-3648-6A87-32BFD9F852B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{255FAFDC-F1EC-4880-7D21-15A4A1D77069} = {B74F3C35-59E8-51DC-66E2-E46BE919468F}
+		{29C6F142-1C22-5824-47A2-5A522D062DC1} = {255FAFDC-F1EC-4880-7D21-15A4A1D77069}
+		{DA71177D-7138-F2DF-6218-5092368423D6} = {29C6F142-1C22-5824-47A2-5A522D062DC1}
+		{CF84FF9D-5F61-6DE1-B27B-CD5AEFD2339F} = {DA71177D-7138-F2DF-6218-5092368423D6}
+		{0B2197A7-A1FC-CECB-CB67-96C1AB6477BE} = {CF84FF9D-5F61-6DE1-B27B-CD5AEFD2339F}
+		{9094F4A4-BED0-3648-6A87-32BFD9F852B3} = {CF84FF9D-5F61-6DE1-B27B-CD5AEFD2339F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {731E9AE6-B8B9-44E1-A18D-6602229CED3B}
+	EndGlobalSection
+EndGlobal
