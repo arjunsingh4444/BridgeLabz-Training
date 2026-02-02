@@ -1085,6 +1085,12 @@ CSV Data Handling: Implemented CSV parsing and validation for structured data su
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 📅 Date: 29 January 2026
 Scenario-Based Projects
 1️⃣ StreamBuzz – Creator Engagement Tracker
@@ -1098,6 +1104,26 @@ Helps identify popular creators.
 2️⃣ OceanFleet – Vessel Performance Analytics
 
 Tracks cargo vessel performance across different routes.
+
+
+
+
+📌 02 February 2026
+🧩 Scenario 1: Lexical Twist
+
+Developed a puzzle-based program that processes two words and performs different transformations and analyses based on given conditions.
+
+🚚 Scenario 2: FutureLogistics
+
+Built a basic application to automate the billing system, maintaining goods transport records and displaying billing details as required.
+
+📂 Assignment
+
+Submission of JSON Data
+
+💻 LeetCode
+
+Reverse Linked List II
 
 Records and retrieves vessel data.
 
