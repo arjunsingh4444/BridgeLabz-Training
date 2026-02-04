@@ -1157,3 +1157,23 @@ Divide Two Integers
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 
+
+📅 04 February 2026
+1. SQL & Database Work
+
+Practiced Normalization (up to 3NF) and designed ER diagrams.
+
+Implemented DDL, DML, DCL operations on a sample database (student_records).
+
+Tested table creation, data insertion, updates, deletion, indexing, and window functions.
+
+2. Assignment
+
+Completed multi-threading assignment for payroll management.
+
+Implemented threaded employee insertion and update operations.
+
+3. LeetCode Practice
+
+Solved: Longest Common Prefix problem.
+
