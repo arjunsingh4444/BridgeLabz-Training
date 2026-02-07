@@ -1177,3 +1177,73 @@ Implemented threaded employee insertion and update operations.
 
 Solved: Longest Common Prefix problem.
 
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+📅 07 February 2026
+
+
+# Health Clinic Database & Full Stack Practice
+
+This repository contains my hands-on practice work related to **database creation**, **backend–frontend connection**, and **problem-solving using LeetCode**.  
+The goal of this project is to strengthen my understanding of **DBMS, SQL Server, C# (.NET), and frontend integration using VS Code**.
+
+---
+
+## 🚀 Work Done
+
+###. Health Clinic Database Creation
+- Designed and created a **HealthClinicDB** database
+- Created tables such as:
+  - `Patients`
+  - (Other related tables can be added later)
+- Implemented proper columns like:
+  - `patient_id`
+  - `name`
+  - `dob`
+- Used **SQL Server** for database management
+
+###  Frontend Connection (VS Code)
+- Integrated **HealthClinicDB backend logic** with frontend setup
+- Used **VS Code** as the development environment
+- Verified database connection through backend before frontend integration
+- Prepared the foundation for future UI interaction
+
+---
+
+### LeetCode Practice
+- Solved **LeetCode Problem 125 – Valid Palindrome**
+- Focus areas:
+  - String manipulation
+  - Two-pointer technique
+  - Edge case handling
+- Improved problem-solving and logical thinking skills
+
+---
+
+## 🛠️ Technologies Used
+
+- **C# (.NET)**
+- **SQL Server**
+- **Microsoft.Data.SqlClient**
+- **VS Code**
+- **Git & GitHub**
+- **LeetCode**
+
+---
+
+## 📌 Learning Outcomes
+
+- Learned how to create and manage databases
+- Understood SQL Server connection strings in .NET
+- Practiced real-world backend database connectivity
+- Improved coding skills through LeetCode
+- Gained confidence in using VS Code for full stack development
+
+---
+
