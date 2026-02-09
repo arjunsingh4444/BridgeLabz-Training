@@ -1,93 +1,11 @@
--- create database FlightDB;
--- use  FlightDB;
-
--- CREATE TABLE Flights
--- (
---     FlightId INT IDENTITY PRIMARY KEY,
---     FlightNumber VARCHAR(10),
---     FlightName VARCHAR(50),
---     PassengerCount INT,
---     FuelLevel FLOAT,
---     CreatedAt DATETIME DEFAULT GETDATE()
--- );
-
--- CREATE TABLE FlightAudit
--- (
---     AuditId INT IDENTITY PRIMARY KEY,
---     FlightId INT,
---     OperationType VARCHAR(10),
---     OperationDate DATETIME DEFAULT GETDATE()
--- );
-
--- CREATE NONCLUSTERED INDEX IDX_FlightNumber
--- ON Flights(FlightNumber);
-
--- CREATE NONCLUSTERED INDEX IDX_FlightName
--- ON Flights(FlightName);
-
-
--- CREATE TRIGGER trg_Flight_Insert
--- ON Flights
--- AFTER INSERT
--- AS
--- BEGIN
---     INSERT INTO FlightAudit (FlightId, OperationType)
---     SELECT FlightId, 'INSERT' FROM inserted;
--- END;
-
--- CREATE TRIGGER trg_Flight_Update
--- ON Flights
--- AFTER UPDATE
--- AS
--- BEGIN
---     INSERT INTO FlightAudit (FlightId, OperationType)
---     SELECT FlightId, 'UPDATE' FROM inserted;
--- END;
-
-
--- CREATE TRIGGER trg_Flight_Delete
--- ON Flights
--- AFTER DELETE
--- AS
--- BEGIN
---     INSERT INTO FlightAudit (FlightId, OperationType)
---     SELECT FlightId, 'DELETE' FROM deleted;
--- END;
-
-
--- CREATE PROCEDURE sp_AddFlight
--- (
---     @FlightNumber VARCHAR(10),
---     @FlightName VARCHAR(50),
---     @PassengerCount INT,
---     @FuelLevel FLOAT
--- )
--- AS
--- BEGIN
---     INSERT INTO Flights
---     VALUES (@FlightNumber, @FlightName, @PassengerCount, @FuelLevel, GETDATE());
--- END;
-
-
--- EXEC sp_AddFlight 'FL-1234', 'SpiceJet', 250, 50000;
-
-
--- SELECT * FROM Flights;
--- SELECT * FROM FlightAudit;
-
-
-
-
-
-
 /* ======================================================
    HEALTH CLINIC DATABASE PROJECT
 ====================================================== */
 
-CREATE DATABASE HealthClinicDB;
-GO
-USE HealthClinicDB;
-GO
+-- -- CREATE DATABASE HealthClinicDB;
+-- GO
+-- USE HealthClinicDB;
+-- GO
 
 /* =======================
    SPECIALTIES
