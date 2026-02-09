@@ -9,7 +9,7 @@ class Clinic
         IAppointmentService appointmentService = new AppointmentService();
         IVisitService visitService = new VisitService();
         IBillingService billingService = new BillingService();
-        IAdminService adminService = new AdminService();   // ✅ UC-6
+        IAdminService adminService = new AdminService();   // UC-6
 
         while (true)
         {
@@ -19,7 +19,7 @@ class Clinic
             Console.WriteLine("3. Appointment Scheduling");
             Console.WriteLine("4. Visit Management");
             Console.WriteLine("5. Billing & Payments");
-            Console.WriteLine("6. System Administration");   // ✅ UC-6
+            Console.WriteLine("6. System Administration");   // UC-6
             Console.WriteLine("0. Exit");
             Console.Write("Enter choice: ");
 
@@ -33,7 +33,7 @@ class Clinic
                 case 3: AppointmentMenu(appointmentService); break;
                 case 4: VisitMenu(visitService); break;
                 case 5: BillingMenu(billingService); break;
-                case 6: AdminMenu(adminService); break;   // ✅ FIXED
+                case 6: AdminMenu(adminService); break;   // FIXED
                 case 0:
                     Console.WriteLine("Exiting system...");
                     return;
@@ -165,7 +165,7 @@ class Clinic
 
             switch (choice)
             {
-                case 1: service.GenerateBill(); break;   // ✅ FIXED
+                case 1: service.GenerateBill(); break;   // FIXED
                 case 2: service.RecordPayment(); break;
                 case 3: service.ViewOutstandingBills(); break;
                 case 4: service.GenerateRevenueReport(); break;

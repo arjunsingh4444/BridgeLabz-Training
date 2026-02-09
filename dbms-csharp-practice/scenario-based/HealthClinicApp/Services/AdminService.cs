@@ -17,7 +17,7 @@ public class AdminService : IAdminService
         cmd.Parameters.AddWithValue("@name", specialty);
 
         cmd.ExecuteNonQuery();
-        Console.WriteLine("✅ Specialty added");
+        Console.WriteLine("Specialty added");
     }
 
     // ================= UC-6.1 View Specialties =================
