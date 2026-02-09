@@ -1222,28 +1222,34 @@ The goal of this project is to strengthen my understanding of **DBMS, SQL Server
   - String manipulation
   - Two-pointer technique
   - Edge case handling
-- Improved problem-solving and logical thinking skills
+- Improved problem-solving and logical thinking skill
 
+
+
+
+
+
+### 📅 09 February 2026
+
+# 🏥 Healthy Clinic App
+A simple **Healthy Clinic Management Application** designed to manage patients, doctors, appointments, and basic clinic operations. This app focuses on clean workflows, easy usage, and real‑world clinic scenarios.
 ---
+## 📌 Purpose of the Application
+The Healthy Clinic App helps clinics to:
+* Manage patient records
+* Manage doctor details
+* Book and track appointments
+* Reduce manual paperwork
+* Improve clinic efficiency
 
-## 🛠️ Technologies Used
+## 🧑‍⚕️ Admin Use Cases
+## 👨‍⚕️ Doctor Use Cases
+## 🧾 Appointment Management Use Cases
+## 💊 Prescription Use Cases
+## 📊 Reports & Records Use Cases
+📌Branch:dbms-csharp-practice
 
-- **C# (.NET)**
-- **SQL Server**
-- **Microsoft.Data.SqlClient**
-- **VS Code**
-- **Git & GitHub**
-- **LeetCode**
-
----
-
-## 📌 Learning Outcomes
-
-- Learned how to create and manage databases
-- Understood SQL Server connection strings in .NET
-- Practiced real-world backend database connectivity
-- Improved coding skills through LeetCode
-- Gained confidence in using VS Code for full stack development
-
----
+### 3. LeetCode Practice
+Solved: Combine Two tables
+📌Branch:dbms-csharp-practice
 
