@@ -21,129 +21,151 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         // Adds a new contact to the list
         public void AddContact()
         {
-            Contact contact = new Contact();
-
-            Console.Write("Enter First Name: ");
-            contact.FirstName = Console.ReadLine() ?? "";
-
-            Console.Write("Enter Last Name: ");
-            contact.LastName = Console.ReadLine() ?? "";
-
-            // Duplicate check using List.Contains (uses overridden Equals)
-            if (contacts.Contains(contact))
+            try // NEW: Exception Handling
             {
-                Console.WriteLine("Duplicate contact found.\n");
-                return;
+                Contact contact = new Contact();
+
+                Console.Write("Enter First Name: ");
+                contact.FirstName = Console.ReadLine() ?? "";
+
+                Console.Write("Enter Last Name: ");
+                contact.LastName = Console.ReadLine() ?? "";
+
+                // Duplicate check using List.Contains (uses overridden Equals)
+                if (contacts.Contains(contact))
+                {
+                    Console.WriteLine("Duplicate contact found.\n");
+                    return;
+                }
+
+                Console.Write("Enter Address: ");
+                contact.Address = Console.ReadLine() ?? "";
+
+                Console.Write("Enter City: ");
+                contact.City = Console.ReadLine() ?? "";
+
+                Console.Write("Enter State: ");
+                contact.State = Console.ReadLine() ?? "";
+
+                Console.Write("Enter Zip: ");
+                contact.Zip = Console.ReadLine() ?? "";
+
+                Console.Write("Enter Phone Number: ");
+                contact.PhoneNumber = Console.ReadLine() ?? "";
+
+                Console.Write("Enter Email: ");
+                contact.Email = Console.ReadLine() ?? "";
+
+                contacts.Add(contact);
+                Console.WriteLine("Contact added successfully.\n");
             }
-
-            Console.Write("Enter Address: ");
-            contact.Address = Console.ReadLine() ?? "";
-
-            Console.Write("Enter City: ");
-            contact.City = Console.ReadLine() ?? "";
-
-            Console.Write("Enter State: ");
-            contact.State = Console.ReadLine() ?? "";
-
-            Console.Write("Enter Zip: ");
-            contact.Zip = Console.ReadLine() ?? "";
-
-            Console.Write("Enter Phone Number: ");
-            contact.PhoneNumber = Console.ReadLine() ?? "";
-
-            Console.Write("Enter Email: ");
-            contact.Email = Console.ReadLine() ?? "";
-
-            contacts.Add(contact);
-            Console.WriteLine("Contact added successfully.\n");
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error while adding contact: " + ex.Message);
+            }
         }
 
-        // Updates city for a given contact
         public void EditContact()
         {
-            Console.Write("Enter First Name to Edit: ");
-            string name = Console.ReadLine() ?? "";
-
-            var contact = contacts.FirstOrDefault(c => c.FirstName == name);
-
-            if (contact != null)
+            try
             {
-                Console.Write("Enter New City: ");
-                contact.City = Console.ReadLine() ?? "";
-                Console.WriteLine("Contact updated.\n");
+                Console.Write("Enter First Name to Edit: ");
+                string name = Console.ReadLine() ?? "";
+
+                var contact = contacts.FirstOrDefault(c => c.FirstName == name);
+
+                if (contact != null)
+                {
+                    Console.Write("Enter New City: ");
+                    contact.City = Console.ReadLine() ?? "";
+                    Console.WriteLine("Contact updated.\n");
+                }
+                else
+                {
+                    Console.WriteLine("Contact not found.\n");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("Contact not found.\n");
+                Console.WriteLine("Error while editing: " + ex.Message);
             }
         }
 
-        // Removes contact using List.Remove
         public void DeleteContact()
         {
-            Console.Write("Enter First Name to Delete: ");
-            string name = Console.ReadLine() ?? "";
-
-            var contact = contacts.FirstOrDefault(c => c.FirstName == name);
-
-            if (contact != null)
+            try
             {
-                contacts.Remove(contact);
-                Console.WriteLine("Contact deleted.\n");
+                Console.Write("Enter First Name to Delete: ");
+                string name = Console.ReadLine() ?? "";
+
+                var contact = contacts.FirstOrDefault(c => c.FirstName == name);
+
+                if (contact != null)
+                {
+                    contacts.Remove(contact);
+                    Console.WriteLine("Contact deleted.\n");
+                }
+                else
+                {
+                    Console.WriteLine("Contact not found.\n");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("Contact not found.\n");
+                Console.WriteLine("Error while deleting: " + ex.Message);
             }
         }
 
-        // Allows adding multiple contacts
         public void AddMultipleContactsMenu()
         {
             int choice;
             do
             {
-                Console.WriteLine("\n1. Add New Contact");
-                Console.WriteLine("0. Go Back");
-                choice = Convert.ToInt32(Console.ReadLine());
+                try // NEW
+                {
+                    Console.WriteLine("\n1. Add New Contact");
+                    Console.WriteLine("0. Go Back");
+                    choice = Convert.ToInt32(Console.ReadLine());
 
-                if (choice == 1)
-                    AddContact();
+                    if (choice == 1)
+                        AddContact();
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Invalid input. Please enter a number.");
+                    choice = -1;
+                }
 
             } while (choice != 0);
         }
 
-        // Searches contacts by city
+        // Other methods remain same (search/count/sort/display)
+        // No threading here (threading handled in MenuManager for multiple books)
+
         public void SearchByCity(string city)
         {
             var results = contacts.Where(c => c.City == city);
-
             foreach (var contact in results)
                 Console.WriteLine($"{contact.FirstName} {contact.LastName} | {Name}");
         }
 
-        // Searches contacts by state
         public void SearchByState(string state)
         {
             var results = contacts.Where(c => c.State == state);
-
             foreach (var contact in results)
                 Console.WriteLine($"{contact.FirstName} {contact.LastName} | {Name}");
         }
 
-        // Returns total contacts in a city
         public int GetCountByCity(string city)
         {
             return contacts.Count(c => c.City == city);
         }
 
-        // Returns total contacts in a state
         public int GetCountByState(string state)
         {
             return contacts.Count(c => c.State == state);
         }
 
-        // Sort using built-in List.Sort with lambda
         public void SortContactsByName()
         {
             contacts.Sort((a, b) => a.FirstName.CompareTo(b.FirstName));
@@ -168,14 +190,12 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             Console.WriteLine("Sorted by Zip.\n");
         }
 
-        // Displays all contacts in this book
         public void DisplayAllContacts()
         {
             foreach (var contact in contacts)
                 Console.WriteLine(contact);
         }
 
-        // Adds contacts to global dictionaries
         public void AddToCityStateDictionary(
             Dictionary<string, List<string>> cityMap,
             Dictionary<string, List<string>> stateMap)

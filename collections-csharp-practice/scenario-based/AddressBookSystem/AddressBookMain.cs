@@ -7,8 +7,15 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Address Book Program");
-            MenuManager.DisplayMenu();
+            try
+            {
+                Console.WriteLine("Welcome to Address Book Program");
+                MenuManager.DisplayMenu();
+            }
+            catch (Exception ex) // NEW: Global Exception Handling
+            {
+                Console.WriteLine("Unexpected error occurred: " + ex.Message);
+            }
         }
     }
 }
